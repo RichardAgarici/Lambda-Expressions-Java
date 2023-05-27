@@ -1,0 +1,31 @@
+Functional interfaces:
+
+An interface with only a single abstract method.
+(Comparable)
+
+Hardcode implementation of a functional interface would require an anonymous inner class which overwrites the single method.
+To simplify it, we can use lambda expressions.
+
+java.util.function = the package it used for a base functional interfaces
+
+there are 4 types of functional interfaces
+
+Consumer
+void consume(obj) = takes an object and returns null
+this is why it's called consumer.
+it takes a single argument and doesn't a value.
+a lot of objects in java require a consumer implementation.
+there are a few variations of this interface :
+BiConsumer(2 arguments),
+IntConsumer ( primitive specialisation ) = it's a better use for the Consumer interface in case we deal with a lot of
+int arguments. This doesn't get effected by boxing.
+
+
+Supplier
+obj supply() = opposite of the Consumer. it takes no value and return some object.
+
+Function = maps a value to a different value
+obj map(obj)
+
+Predicate = operation for filtering data. like taking a data and testing if the required one matches a formula.
+boolean test(condition)
