@@ -1,0 +1,17 @@
+import java.util.function.BinaryOperator;
+import java.util.function.Function;
+import java.util.function.IntBinaryOperator;
+
+public class LambdasDemo {
+
+    public static void show() {
+        var x = 1 + 2; // this is basic binary
+        // a, b -> a + b -> square.
+        BinaryOperator<Integer> add = (a, b) -> a + b;
+        Function<Integer, Integer> square = a -> a * a;
+
+//        IntBinaryOperator is used if we have more the one int
+        var result = add.andThen(square).apply(1, 2);
+        System.out.println(result);
+    }
+}

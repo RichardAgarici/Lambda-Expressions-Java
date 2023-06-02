@@ -1,0 +1,39 @@
+//======================================================================================================================
+
+import java.util.function.Predicate;
+
+public class LambdasDemo {
+
+    public static void show() {
+        Predicate<String> isLongerThan5 = str -> str.length() > 5;
+        var result = isLongerThan5.test("sky");
+        System.out.println(result);
+    }
+}
+
+//This interface tests if a certain condition is true based upon input.
+
+//======================================================================================================================
+### Combining Predicators ###
+
+import java.util.function.Predicate;
+
+public class LambdasDemo {
+
+    public static void show() {
+        Predicate<String> hasLeftBrace = str -> str.startsWith("{");
+        Predicate<String> hasRightBrace = str -> str.endsWith("}");
+
+//        && || ! they are equivalent to this.
+
+//        Predicate<String> hasLeftAndRightBrace=hasLeftBrace.and(hasRightBrace);
+//        var result = hasLeftAndRightBrace.test("{key:value}");
+
+//        hasLeftBrace.or(hasRightBrace); // returns true if either of the predicates are true.
+
+        var result = hasLeftBrace.negate().test("Ala bala portocala");
+        // this one is negating is boolean predicator.
+        System.out.println(result);
+    }
+}
+//======================================================================================================================
