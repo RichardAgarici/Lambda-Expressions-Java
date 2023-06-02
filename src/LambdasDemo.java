@@ -3,6 +3,20 @@ import java.util.function.Consumer;
 import java.util.function.Supplier;
 
 public class LambdasDemo {
+
+    //======================================================================================================================
+//    Consumer Interface
+    public static void show() {
+//        List<Integer> list = List.of(1, 2, 3);
+
+//        Imperative programming (for, if/else, switch/case)
+//        for (var item : list)
+//            System.out.println(item);
+
+//        Declarative programming
+//        list.forEach(item -> System.out.println(item));
+    }
+
     //======================================================================================================================
 //    public static void show(){
 //        greet(new ConsolePrinter());
