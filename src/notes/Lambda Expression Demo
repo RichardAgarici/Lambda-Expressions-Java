@@ -1,0 +1,6 @@
+//    Lambda Expression :
+    public static void show() {
+        greet(message -> {
+            System.out.println(message);
+        });
+    }

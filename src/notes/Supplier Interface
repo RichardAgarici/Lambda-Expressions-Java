@@ -1,0 +1,10 @@
+  The Supplier Interface:
+//    .get()
+//    public static void show() {
+//        Supplier<Double> getRandom = () -> Math.random();
+//        var random = getRandom.get();
+        //The supplier lambda won't be executed if we don't use the .get() method.
+        //This class also has certain Supplier forms just like Consumers.
+//      DoubleSupplier, IntSupplier... ( This again supports the idea of autoboxing)
+//        System.out.println(random);
+//    }

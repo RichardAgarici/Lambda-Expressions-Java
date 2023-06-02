@@ -7,5 +7,6 @@ public class LambdasDemo {
         var length = map.apply("Sky");
         System.out.println(length);
     }
-
 }
+
+basically we can use this to configure various cases of string to int or t to v.

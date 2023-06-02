@@ -1,0 +1,19 @@
+//    Variable capture :
+
+    //    public static void show() {
+//        String prefix = "-";
+//        greet(message -> System.out.println(prefix + message));
+//    }
+//    public static String prefix = "-";
+//    public static void show() {
+//        String prefix = "-";
+//        greet(message -> System.out.println(prefix + message));
+//        //this also works as a static member because it's a static method.
+//        //also works if the variable is non-static, before the variable being non-static.
+//        //in lambda expressions the keyword "this" signifies the current instance(scope) of the anonymous class
+//
+//    }
+//
+//    public static void greet(Printer printer) {
+//        printer.print("Hello world");
+//    }

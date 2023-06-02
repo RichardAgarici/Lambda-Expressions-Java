@@ -1,0 +1,15 @@
+    Consumer Interface:
+    public static void show() {
+        List<Integer> list = List.of(1, 2, 3);
+  //This is called imperative programming(for, if/else, switch/case)
+        for (var item : list)
+            System.out.println(item);
+        list.forEach(item -> System.out.println(item));
+    /*
+        This is declarative programming
+            list.forEach() = is a constructor which requires a Consumer interface. that means that we can use the lambda
+            expression in order to no hardcode everything.
+            This implementation can be done by method reference also. See example below.
+     */
+        list.forEach(System.out::println);
+    }

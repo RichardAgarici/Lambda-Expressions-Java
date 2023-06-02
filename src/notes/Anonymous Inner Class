@@ -1,0 +1,16 @@
+//======================================================================================================================
+//    Anonymous inner class:
+//    In case we don't want to make a lot of classes with only 1 implementation like in this example:
+//    public static void show(){
+//        greet(new Printer() {
+//            @Override
+//            public void print(String message) {
+//                System.out.println(message);
+//            }
+//        });
+////        this is anonymous inner class
+//    }
+//    public static void greet(Printer printer){
+//        printer.print("Hello world");
+//    }
+//======================================================================================================================

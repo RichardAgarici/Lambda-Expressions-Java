@@ -1,0 +1,31 @@
+//    Method References:
+
+    public static void greet(Printer printer) {
+        printer.print("Hello world");
+    }
+
+//    public static void show() {
+//   greet(message -> System.out.println(message));
+//   greet(System.out::println);
+    // Class/Object::
+
+//        greet(message -> print(message));
+//        greet(LambdasDemo::print);
+//        var demo = new LambdasDemo();
+//        greet(message -> demo.print(message));
+//        greet(demo::print); // this is for instance of.
+//
+//        greet(message -> new LambdasDemo(message));
+//        greet(LambdasDemo::new);
+    //these 2 are the same
+//    }
+
+
+//    public static void greet(Printer printer) {
+//        printer.print("Hello world");
+//    }
+
+    //    public static void print(String message) {
+//    }
+//    public void print(String message) {
+//    }
